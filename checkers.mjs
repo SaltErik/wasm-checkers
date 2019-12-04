@@ -5,7 +5,11 @@ const WHITE = 2;
 const CROWNED_BLACK = 5;
 const CROWNED_WHITE = 6;
 
-async function test() {
+const assert = (predicate) => {
+  if (!predicate) throw Error(`Assertion failed!`);
+};
+
+const test = async () => {
   const wasm = await init();
   console.dir(wasm);
   console.log(`Offset for 3,4 is`, wasm.offsetForPosition(3,4));
@@ -17,6 +21,6 @@ async function test() {
   console.log(`Uncrowned black`, !!wasm.isBlack(wasm.removeCrown(CROWNED_BLACK)));
   console.log(`Crowned black is crowned`, !!wasm.isCrowned(CROWNED_BLACK));
   console.log(`Crowned white is crowned`, !!wasm.isCrowned(CROWNED_WHITE));
-}
+};
 
 test();
