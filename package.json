@@ -1,0 +1,19 @@
+{
+  "name": "wasm-checkers",
+  "version": "1.0.0",
+  "description": "A tiny Checkers game module, hand-written in WebAssembly",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaltErik/wasm-checkers.git"
+  },
+  "author": "SaltErik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SaltErik/wasm-checkers/issues"
+  },
+  "homepage": "https://github.com/SaltErik/wasm-checkers#readme"
+}
