@@ -1,0 +1,1 @@
+cls && wasm2wat checkers.wasm -o roundtrip.wat

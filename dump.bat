@@ -1,0 +1,1 @@
+cls && wasm-objdump checkers.wasm -x
